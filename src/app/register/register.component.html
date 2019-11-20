@@ -26,15 +26,16 @@
                             {{industry}}
                           </option>
                         </select>
-                        <!-- <form [formGroup]="form">
-                          <input type="text" formControlName="name">
-                          <br />
+                        
+                          <!-- <input type="text" formControlName="name">
+                          
                           <intl-tel-input [preferredCountries]="['ug', 'gb', 'de', 'be']" [enablePlaceholder]="true" formControlName="phoneNumber"></intl-tel-input>
-                        </form> -->
+                         -->
                       </fieldset>
                     </div>
                   
                 </div>
+                <button mat-button matStepperNext>Next</button>
        </div> 
     </mat-step>
     <mat-step>
@@ -58,8 +59,8 @@
                         </div>
                     </form>
                     <div class="row">
-                        <button>Previous</button>
-                        <button>Next</button>
+                        <button mat-button matStepperPrevious>Previous</button>
+                        <button mat-button matStepperNext>Next</button>
             
                     </div>
             
@@ -95,7 +96,7 @@
 
     </div>
     <div>
-        <button>PREVIOUS</button>
+        <button mat-button matStepperPrevious>PREVIOUS</button>
         <button>SIGN UP</button>
     </div>
     <p>
