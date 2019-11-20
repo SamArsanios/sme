@@ -1,1 +1,116 @@
-<p>register works!</p>
+<mat-horizontal-stepper linear>
+    <mat-step>
+       <p>ACCOUNT DETAILS</p>
+       <div>
+            <div class="row">
+                    <div class="col-sm-4">
+                      <fieldset>
+                      
+                        <p>Tell us something more about you</p>
+                        <p>Register as</p>
+                        <input type="radio" name="supplier">
+                        <label for="supplier">supplier</label>
+                        <input type="radio" name="buyer">
+                        <label for="buyer">buyer</label>
+                        <input type="radio" name="sponsor">
+                        <label for="sponsor">sponsor</label>
+                        <p>Choose Wallet</p>
+                        <select>
+                          <option *ngFor="let wallet of wallets" value={{wallets}}>
+                            {{wallet}}
+                          </option>
+                        </select>
+                        <p>Industry Type</p>
+                        <select>
+                          <option *ngFor="let industry of industries" value={{industries}}>
+                            {{industry}}
+                          </option>
+                        </select>
+                        <!-- <form [formGroup]="form">
+                          <input type="text" formControlName="name">
+                          <br />
+                          <intl-tel-input [preferredCountries]="['ug', 'gb', 'de', 'be']" [enablePlaceholder]="true" formControlName="phoneNumber"></intl-tel-input>
+                        </form> -->
+                      </fieldset>
+                    </div>
+                  
+                </div>
+       </div> 
+    </mat-step>
+    <mat-step>
+        <p> PERSONAL DETAILS</p>
+
+        
+       
+        <div class="container-fluid">
+                <div id="personal-info">
+                    <h2>Personal Details</h2>
+            
+                    <h6>Tell us something more about you</h6>
+            
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+            
+                        </div>
+                    </form>
+                    <div class="row">
+                        <button>Previous</button>
+                        <button>Next</button>
+            
+                    </div>
+            
+                </div>
+            
+            
+            </div>
+    </mat-step>
+    <mat-step>
+        <p>SECURITY QUESTIONS</p>
+        <h6>Fill in your credentials</h6>
+<form action="">
+    <div class="form-group">
+        <label for="">In what city or town did your mother meet?</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="">What is the middle name of your oldest child?</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">What was the name of the company where you had your first job?</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Which school did you attend for sixth grade?</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">What was the name of your childhood friend?</label>
+        <input type="text" class="form-control">
+
+    </div>
+    <div>
+        <button>PREVIOUS</button>
+        <button>SIGN UP</button>
+    </div>
+    <p>
+        By clicking Sign Up, you agree to our Terms and Conditions and Privacy Policy.
+    </p>
+  
+</form>
+
+    </mat-step>
+</mat-horizontal-stepper>
+
+
+
+
+    
+    
+
+
