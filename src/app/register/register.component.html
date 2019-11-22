@@ -59,7 +59,7 @@
                     <mat-step label="PERSONAL DETAILS">
 
                         <div class="register-inner">
-                            <p class="title">ACCOUNT DETAILS</p>
+                            <p class="title">PERSONAL DETAILS</p>
                             <hr class="detail">
                             <p class="subtitle">Tell us something more about you</p>
                             <div>
@@ -79,8 +79,7 @@
                                     <mat-label>Confirm Password</mat-label>
                                     <input matInput>
                                 </mat-form-field>
-                                <button mat-raised-button>PREVIOUS</button>
-                                <button mat-raised-button>NEXT</button>
+                                <button mat-raised-button matStepperPrevious>PREVIOUS</button>
                             </div>
                            
                             
@@ -91,55 +90,43 @@
 
 
 
-                    <mat-step label="ACCOUNT DETAILS">
+                    
+                    <mat-step label="SECURITY QUESTIONS">
 
-                        <div class="register-inner">
-                            <p class="title">ACCOUNT DETAILS</p>
-                            <hr class="detail">
-                            <p class="subtitle">Tell us something more about you</p>
-                            <div>
-                                <p class="register-title">Register as:</p><br>
-                                <mat-radio-group>
-                                    <mat-radio-button color="primary" size="small">supplier</mat-radio-button>
-                                    <mat-radio-button color="primary">buyer</mat-radio-button>
-                                    <mat-radio-button color="primary">sponsor</mat-radio-button>
-                                </mat-radio-group>
+                            <div class="register-inner">
+                                <p class="title">SECURITY QUESTIONS</p>
+                                <hr class="detail">
+                                <p class="subtitle">Fill in your credentials</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>In what city or town did your mother and father meet?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>In what town was your first job?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>What was the name of the company where you had your first job?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>What was your favorite food as a child?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                            <mat-label>What is the name of your favorite childhood friend?</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    <button mat-raised-button matStepperPrevious>PREVIOUS</button>
+                                    <button mat-raised-button matStepperNext>NEXT</button>
+                                </div>
+                               
+                                
+                              
+    
                             </div>
-                            <div>
-                                <mat-form-field appearance="outline">
-                                    <mat-label class="label">Choose Wallet</mat-label>
-                                    <mat-select disableOptionCentering>
-                                        <mat-option *ngFor="let wallet of wallets" value={{wallets}}>{{wallet}}
-                                        </mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-                            </div>
-                            <div>
-                                <mat-form-field appearance="outline">
-                                    <mat-label class="label">Industry Type</mat-label>
-                                    <mat-select class="labelinfo">
-
-                                        <mat-option *ngFor="let industry of industries" value={{industries}}>
-                                            {{industry}}
-                                        </mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-                            </div>
-                            <div>
-                                <mat-form-field appearance="outline">
-                                    <mat-label class="label">Phone Number</mat-label>
-                                    <mat-select>
-
-                                        <mat-option *ngFor="let industry of industries" value={{industries}}>
-                                            {{industry}}
-                                        </mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-                                <button mat-raised-button>SEND OTP</button>
-                            </div>
-
-                        </div>
-                    </mat-step>
+                        </mat-step>
                 </mat-horizontal-stepper>
             </div>
 
