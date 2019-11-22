@@ -49,17 +49,84 @@
                                         </mat-option>
                                     </mat-select>
                                 </mat-form-field>
-                           <button mat-raised-button>SEND OTP</button> 
+                                <button mat-raised-button>SEND OTP</button>
                             </div>
 
                         </div>
                     </mat-step>
+
+
                     <mat-step label="PERSONAL DETAILS">
-                        <p>personal details</p>
+
+                        <div class="register-inner">
+                            <p class="title">PERSONAL DETAILS</p>
+                            <hr class="detail">
+                            <p class="subtitle">Tell us something more about you</p>
+                            <div>
+                                <mat-form-field>
+                                    <mat-label>Name</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Email</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Password</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Confirm Password</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <button mat-raised-button matStepperPrevious>PREVIOUS</button>
+                            </div>
+                           
+                            
+                          
+
+                        </div>
                     </mat-step>
+
+
+
+                    
                     <mat-step label="SECURITY QUESTIONS">
-                        <p>security questions</p>
-                    </mat-step>
+
+                            <div class="register-inner">
+                                <p class="title">SECURITY QUESTIONS</p>
+                                <hr class="detail">
+                                <p class="subtitle">Fill in your credentials</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>In what city or town did your mother and father meet?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>In what town was your first job?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>What was the name of the company where you had your first job?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>What was your favorite food as a child?</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                            <mat-label>What is the name of your favorite childhood friend?</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    <button mat-raised-button matStepperPrevious>PREVIOUS</button>
+                                    <button mat-raised-button matStepperNext>NEXT</button>
+                                </div>
+                               
+                                
+                              
+    
+                            </div>
+                        </mat-step>
                 </mat-horizontal-stepper>
             </div>
 
