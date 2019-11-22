@@ -4,7 +4,7 @@
 
         <div class="register-info">
             <div>
-                <mat-horizontal-stepper labelPosition="bottom" matStepperIcon="number">
+                <mat-horizontal-stepper labelPosition="bottom" [linear]="isLinear" #stepper>
                     <mat-step label="ACCOUNT DETAILS">
 
                         <div class="register-inner">
@@ -80,6 +80,8 @@
                                     <input matInput>
                                 </mat-form-field>
                                 <button mat-raised-button matStepperPrevious>PREVIOUS</button>
+                                <button mat-raised-button matStepperNext>NEXT</button>
+           
                             </div>
                            
                             
@@ -93,7 +95,7 @@
                     
                     <mat-step label="SECURITY QUESTIONS">
 
-                            <div class="register-inner">
+                            <div class="security-inner">
                                 <p class="title">SECURITY QUESTIONS</p>
                                 <hr class="detail">
                                 <p class="subtitle">Fill in your credentials</p>
@@ -119,7 +121,6 @@
                                             <input matInput>
                                         </mat-form-field>
                                     <button mat-raised-button matStepperPrevious>PREVIOUS</button>
-                                    <button mat-raised-button matStepperNext>NEXT</button>
                                 </div>
                                
                                 
