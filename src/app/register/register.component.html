@@ -49,16 +49,96 @@
                                         </mat-option>
                                     </mat-select>
                                 </mat-form-field>
-                           <button mat-raised-button>SEND OTP</button> 
+                                <button mat-raised-button>SEND OTP</button>
                             </div>
 
                         </div>
                     </mat-step>
+
+
                     <mat-step label="PERSONAL DETAILS">
-                        <p>personal details</p>
+
+                        <div class="register-inner">
+                            <p class="title">ACCOUNT DETAILS</p>
+                            <hr class="detail">
+                            <p class="subtitle">Tell us something more about you</p>
+                            <div>
+                                <mat-form-field>
+                                    <mat-label>Name</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Email</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Password</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-label>Confirm Password</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                                <button mat-raised-button>PREVIOUS</button>
+                                <button mat-raised-button>NEXT</button>
+                            </div>
+                           
+                            
+                          
+
+                        </div>
                     </mat-step>
-                    <mat-step label="SECURITY QUESTIONS">
-                        <p>security questions</p>
+
+
+
+                    <mat-step label="ACCOUNT DETAILS">
+
+                        <div class="register-inner">
+                            <p class="title">ACCOUNT DETAILS</p>
+                            <hr class="detail">
+                            <p class="subtitle">Tell us something more about you</p>
+                            <div>
+                                <p class="register-title">Register as:</p><br>
+                                <mat-radio-group>
+                                    <mat-radio-button color="primary" size="small">supplier</mat-radio-button>
+                                    <mat-radio-button color="primary">buyer</mat-radio-button>
+                                    <mat-radio-button color="primary">sponsor</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label class="label">Choose Wallet</mat-label>
+                                    <mat-select disableOptionCentering>
+                                        <mat-option *ngFor="let wallet of wallets" value={{wallets}}>{{wallet}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label class="label">Industry Type</mat-label>
+                                    <mat-select class="labelinfo">
+
+                                        <mat-option *ngFor="let industry of industries" value={{industries}}>
+                                            {{industry}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label class="label">Phone Number</mat-label>
+                                    <mat-select>
+
+                                        <mat-option *ngFor="let industry of industries" value={{industries}}>
+                                            {{industry}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <button mat-raised-button>SEND OTP</button>
+                            </div>
+
+                        </div>
                     </mat-step>
                 </mat-horizontal-stepper>
             </div>
