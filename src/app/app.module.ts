@@ -13,7 +13,8 @@ import { PhoneComponent } from './phone/phone.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 
 import { NgxPhoneNumberInputModule } from   '../../projects/phone-input/src/public_api';
-
+import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
+import { PaymentnoticeComponent } from './paymentnotice/paymentnotice.component';
 
 
 
@@ -26,7 +27,9 @@ import { NgxPhoneNumberInputModule } from   '../../projects/phone-input/src/publ
     LoginComponent,
     HomeComponent,
     RecaptureComponent,
-    PhoneComponent
+    PhoneComponent,
+    BuyerDashboardComponent,
+    PaymentnoticeComponent
 
    
   ],
@@ -39,7 +42,7 @@ import { NgxPhoneNumberInputModule } from   '../../projects/phone-input/src/publ
     ReactiveFormsModule,
     RecaptchaModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
 
   ],
   exports: [
