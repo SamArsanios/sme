@@ -1,9 +1,15 @@
-.filler {
-    flex: 1 1 auto;
- }
- .gap {
-    margin-right: 5%;
-    font-weight: 400;
+.container{
+   margin-top: 15%;
+}
+.row{
+   height: 300px;
+}
+.mat-card{
+   height: 90%;
+   margin-top: 7%;
+   background-color: #7573f1;
 
-    
- }
+}
+.col-md-3 :hover{
+   background-color: blue;
+}

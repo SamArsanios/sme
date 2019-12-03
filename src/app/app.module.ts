@@ -15,6 +15,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
 import { NgxPhoneNumberInputModule } from   '../../projects/phone-input/src/public_api';
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
 import { PaymentnoticeComponent } from './paymentnotice/paymentnotice.component';
+import { BuyerHeaderComponent } from './buyer-header/buyer-header.component';
 
 
 
@@ -29,7 +30,8 @@ import { PaymentnoticeComponent } from './paymentnotice/paymentnotice.component'
     RecaptureComponent,
     PhoneComponent,
     BuyerDashboardComponent,
-    PaymentnoticeComponent
+    PaymentnoticeComponent,
+    BuyerHeaderComponent
 
    
   ],

@@ -1,0 +1,42 @@
+.filler {
+    flex: 1 1 auto;
+ }
+ .gap {
+    /* margin-right: 5%; */
+    /* font-size: 11px; */
+    font-weight: 400; 
+    width: 100px;  
+ }
+ .notofication{
+    width: 100px;
+ }
+ .nav{
+    
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+    
+ }
+ .head{
+    height: auto;
+ }
+
+ .head img{
+    padding-bottom: 3%;
+    padding-top: 3%;
+ }
+
+ a{
+    color: black;
+    font-size: 120%;
+ }
+ .nav{
+    margin-top: 17;
+   
+ }
+ 
+
+
+ 

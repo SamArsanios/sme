@@ -1,20 +1,30 @@
-<mat-toolbar color="primary">
-  <span class="gap">Company logo</span>
-  <span class="filler"></span>
-
-  <span class="gap">User Notofication</span>
-  <span class="gap">logout</span>
-</mat-toolbar>
-
-<mat-tab-group mat-align-tabs="center">
-  <mat-tab label="Account Settings">
-  </mat-tab>
-  <mat-tab label="purchase"></mat-tab>
-  <mat-tab label="invoices"></mat-tab>
-  <mat-tab label="invite"></mat-tab>
-
-  <mat-tab label="Vault"></mat-tab>
-
-  <mat-tab label="payment notice"></mat-tab>
-
-</mat-tab-group>
+<app-buyer-header></app-buyer-header>
+<div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <mat-card class="currentOrders">
+              <mat-card-title> Current Orders</mat-card-title>
+              <mat-card-content>current orders pic</mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card class="invoices">
+              <mat-card-title> Invoices to approve</mat-card-title>
+              <mat-card-content>current orders pic</mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card class="totalorders">
+              <mat-card-title> totalorders </mat-card-title>
+              <mat-card-content>current orders pic</mat-card-content>
+            </mat-card>
+          </div>
+      
+          <div class="col-md-3">
+            <mat-card class="invited-contacts">
+              <mat-card-title>invited contacts</mat-card-title>
+              <mat-card-content>current orders pic</mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>

@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './buyer-dashboard.component.html',
   styleUrls: ['./buyer-dashboard.component.css']
 })
-export class BuyerDashboardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class BuyerDashboardComponent{
+  links = ['First', 'Second', 'Third'];
+  // activeLink = this.links[0];
 }

@@ -11,7 +11,9 @@ import {MatStepperModule,
         MatRadioModule,
         MatFormFieldModule,
         MatInputModule,
-        MatIconModule
+        MatIconModule, 
+        
+
       } from '@angular/material'
 
 const material =[
@@ -26,6 +28,7 @@ const material =[
   MatFormFieldModule,
   MatInputModule,
   MatIconModule,
+  MatTabsModule,
   MatTabsModule
 ]
 

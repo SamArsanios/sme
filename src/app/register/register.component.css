@@ -16,7 +16,7 @@
 }
 .recapture-image{
     margin-top: 7%;
-    border: 2px solid #007bff;;
+    border: 2px solid #1b1899;
     /* min-height: 50px; */
     padding-left: 22%;
     padding-bottom: 5%;
@@ -37,7 +37,7 @@
 .title {
     font-size: 22px;
     text-transform: uppercase;
-    color: #3410d3;;
+    color: #1b1899;
     margin-bottom: 10px;
     font-weight: 700;
     text-align: center;
