@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="head">
+    <span class="gap"><img src="../../assets/logo.png" alt=""></span>
+    <span class="filler"></span>
+
+    <span class="gap"><mat-icon class = "notification" matBadge="50" matBadgeColor="warn">notifications</mat-icon>
+        
+    </span>
+    <span class="gap">logout</span>
+    <span>Kalungi Deborah</span>
+</mat-toolbar>
+
+<nav mat-tab-nav-bar class="nav">
+    <a mat-tab-link *ngFor="let link of links" [routerLink]="['/'+link]" routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        <b>{{link}}</b>
+    </a>
+</nav>
+<div class="breakbelow"></div>
+
+<router-outlet></router-outlet>

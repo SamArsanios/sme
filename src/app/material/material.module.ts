@@ -11,7 +11,11 @@ import {MatStepperModule,
         MatRadioModule,
         MatFormFieldModule,
         MatInputModule,
-        MatIconModule, 
+        MatIconModule,
+        MatTableModule,
+        MatPaginatorModule, 
+        MatDatepickerModule,
+         MatNativeDateModule
         
 
       } from '@angular/material'
@@ -29,7 +33,11 @@ const material =[
   MatInputModule,
   MatIconModule,
   MatTabsModule,
-  MatTabsModule
+  MatTabsModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatDatepickerModule, 
+  MatNativeDateModule
 ]
 
 @NgModule({

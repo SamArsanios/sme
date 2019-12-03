@@ -16,6 +16,12 @@ import { NgxPhoneNumberInputModule } from   '../../projects/phone-input/src/publ
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
 import { PaymentnoticeComponent } from './paymentnotice/paymentnotice.component';
 import { BuyerHeaderComponent } from './buyer-header/buyer-header.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ApproveOrdersComponent } from './approve-orders/approve-orders.component';
+import { CreateOrderComponent } from './create-order/create-order.component';
+import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
+import { OrdersHeaderComponent } from './orders-header/orders-header.component';
+import { InviteContactsComponent } from './invite-contacts/invite-contacts.component';
 
 
 
@@ -31,7 +37,13 @@ import { BuyerHeaderComponent } from './buyer-header/buyer-header.component';
     PhoneComponent,
     BuyerDashboardComponent,
     PaymentnoticeComponent,
-    BuyerHeaderComponent
+    BuyerHeaderComponent,
+    OrdersComponent,
+    ApproveOrdersComponent,
+    CreateOrderComponent,
+    PendingOrdersComponent,
+    OrdersHeaderComponent,
+    InviteContactsComponent
 
    
   ],
